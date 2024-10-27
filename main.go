@@ -20,18 +20,18 @@ func quadA(x int , y int){
 }
 
 
-func quadB(x, y int) {
-	// Eğer x veya y 0 ya da negatifse fonksiyon çalışmaz
+func quadB(x int , y int) {
+	
 	if x <= 0 || y <= 0 {
 		return
 	}
-	// Üst kenar
+	
 	fmt.Print("/")
 	for i := 0; i < x; i++ {
 		fmt.Print("*")
 	}
 	fmt.Println("\\")
-	// Yan kenarlar
+	
 	for i := 0; i < y-2; i++ {
 		fmt.Print("*")
 		for j := 0; j < x; j++ {
@@ -39,7 +39,7 @@ func quadB(x, y int) {
 		}
 		fmt.Println("*")
 	}
-	// Alt kenar
+	
 	fmt.Print("\\")
 	for i := 0; i < x; i++ {
 		fmt.Print("*")
@@ -48,7 +48,7 @@ func quadB(x, y int) {
 }
 
 
-func quadC(x, y int) {
+func quadC(x int , y int) {
 	
 	if x <= 0 || y <= 0 {
 		return
@@ -87,7 +87,7 @@ func quadC(x, y int) {
 		}
 	}
 
-func quadD(x, y int) {
+func quadD(x int , y int) {
 	
 	if x <= 0 || y <= 0 {
 		return
@@ -127,7 +127,7 @@ func quadD(x, y int) {
 		}
 	}
 }
-func quadE(x, y int) {
+func quadE(x int, y int) {
 	
 	if x <= 0 || y <= 0 {
 		return
